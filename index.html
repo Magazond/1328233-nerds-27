@@ -9,142 +9,122 @@
 
   <body>
 <header>
-  <div style="background-color:#eeeeee; width=100%"><!--Что-то сделать, чтобы убрать у серого блока отступы по бокам с сверху-->
-<logo>
-  <img src="img/nerds-logo_draft.jpg">
-</logo>
-<article>
-  <nav class="стиль основного меню">
-    <ul style="display:inline"><!--Здесь инлайн не заработал. Пропишем в стилях-->
+
+  <div class="logo">
+    <img src="img/nerds-logo_draft.jpg">
+  </div>
+
+<nav class="main-menu">
+    <ul>
       <li><a href="#studio">Студия</a></li>
       <li><a href="#clients">Клиенты</a></li>
       <li><a href="#shop">Магазин</a></li>
       <li><a href="#contacts">Контакты</a></li>
-      <li><a href="#contacts"><img src ="img/basket-cap.jpg"</a></li>
+   </ul>
+  </nav>
+
+<div class="basket">
+    <ul>
+      <li><a href="#basket"><img src ="img/basket-cap.jpg"></a></li>
       <li><a href="#basket">Корзина</a></li>
     </ul>
-  </nav>
-  <p class="стиль для слогана">Долго, дорого, скрупулезно.</p>
-  <p class="стиль текста будет, скорее всего, основной для body">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-  <a href="#ссылка для Узнать больше" class="кнопка"+дополнительно задать цвет кнопки>УЗНАТЬ БОЛЬШЕ</a>
-<!--нашла стили для оформления ссылки, визуализированной в виде кнопки>
-<style>
-a.knopka {
-  color: #fff; /* цвет текста */
-  text-decoration: none; /* убирать подчёркивание у ссылок */
-  user-select: none; /* убирать выделение текста */
-  background: rgb(212,75,56); /* фон кнопки */
-  padding: .7em 1.5em; /* отступ от текста */
-  outline: none; /* убирать контур в Mozilla */
-}
-a.knopka:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
-a.knopka:active { background: rgb(152,15,0); } /* при нажатии */
-</style>-->
-<figure>
-  <!--Здесь будет рекламная картинка (баннер) или слайдер картинок-->
-  <img src="img/banner-cap.jpg">
-</figure>
-</article>
 </div>
 </header>
-    <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
 <main>
-  <div class="класс, чтобы задать ширину"><!-- верхний див, чтобы задать ширину блоков, которые войдут в него-->
-  <div>
-    <!--Список из красного, зеленого и желтого блоков-->
-    <ul class="стиль, чтобы положить элементы горизонтально">
+<div class="grey-background">
+  <section class="promo">
+    <p class="slogan">Долго, дорого, скрупулезно.</p>
+    <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+    <a href="" class="knopka">Узнать больше</a><!--Я хочу создать в CSS единый класс для всех кнопок. Как дополнительно к нему для каждой кнопки задать свой цвет?-->
+  <div class="promo-banner">
+      <img src="img/banner-cap.jpg">
+  </div>
+</section>
+
+</div><!--Закрывающий див серого бэкграунда-->
+
+
+
+
+    <section class="services">
+    <ul>
       <li>
-        <article><!--добавить как-то позиционирование содержимого по левому боку-->
-          <!--Красный блок-->
           <img src="img/red-cap.jpg">
-          <h1>ВЕБ-САЙТЫ</h1>
-          <p class="стиль текста основной для body">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-          <a href="#ссылка для кнопки заказа сайта" class="кнопка"+дополнительно задать цвет кнопки>ЗАКАЗАТЬ</a>
-        </article>
+          <h1>Веб-сайты</h1>
+          <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+          <a href="" class="knopka">Заказать</a><!--Я хочу создать в CSS единый класс для всех кнопок. Как дополнительно к нему для каждой кнопки задать свой цвет?-->
       </li>
       <li>
-        <article><!--добавить как-то позиционирование содержимого по левому боку-->
-            <!--Зеленый блок-->
-            <img src="img/green-cap.jpg">
-            <h1>ПРИЛОЖЕНИЯ</h1>
-            <p class="стиль текста основной для body">Покорите топ-10 приложений в AppleStore и Google Play</p>
-            <a href="#ссылка для кнопки заказа приложения" class="кнопка"+дополнительно задать цвет кнопки>ЗАКАЗАТЬ</a>
-        </article>
+          <img src="img/green-cap.jpg">
+          <h1>Приложения</h1>
+          <p>Покорите топ-10 приложений в AppleStore и Google Play</p>
+          <a href="" class="knopka">Заказать</a><!--Я хочу создать в CSS единый класс для всех кнопок. Как дополнительно к нему для каждой кнопки задать свой цвет?-->
       </li>
       <li>
-        <article><!--добавить как-то позиционирование содержимого по левому боку-->
-            <!--Желтый блок-->
-            <img src="img/yellow-cap.jpg">
-            <h1>ПРЕЗЕНТАЦИИ</h1>
-            <p class="стиль текста основной для body">Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="#ссылка для кнопки заказа приложения" class="кнопка"+дополнительно задать цвет кнопки>ЗАКАЗАТЬ</a>
-        </article>
+          <img src="img/yellow-cap.jpg">
+          <h1>Презентации</h1>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a href="" class="knopka">Заказать</a><!--Я хочу создать в CSS единый класс для всех кнопок. Как дополнительно к нему для каждой кнопки задать свой цвет?-->
       </li>
     </ul>
-  </div>
+  </section>
   <hr>
-  <section> <!--Завернула     article и aside в section, чтоыб они рядом по горизонтали встали. ВОзможно, ошибаюсь + понадобятся стили дял блоков-->
-    <article> <!--добавить как-то позиционирование содержимого по левому боку-->
-    <p class="стиль для слогана 2 уровня">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
-    <p class="стиль текста Х">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
-    <ul class="стиль для буллета списка">
+  <section>
+    <div class="about-us">
+    <p class="slogan-2">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+    <p><h2>Выполняем заказы на разработку:</h2></p>
+    <ul class="long-bullet">
       <li>Веб-сайтов любой сложности</li>
       <li>Мобильных приложений для iOS и Android</li>
       <li>Слайдшоу и видео для корпоративных презентаций</li>
-  </article>
+    </ul>
 
-  <aside>
-    <img src="img/nerds happy-cap.jpg"><!--Заглушка для баннера Нердс-->
-    <p class="стиль текста Х"> С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</P>
-      <ul class="чтобы элементы списка лежали по горизонтали">
-        <li><p class="стиль для слогана 2 уровня">146%<p class="стиль текста основной для body">Уровень самоотдачи</p></li>
-        <li><p class="стиль для слогана 2 уровня">100%<p class="стиль текста основной для body">Соблюдение сроков</p></li>
-        <li><p class="стиль для слогана 2 уровня">50%<p class="стиль текста основной для body">Минимальныая предоплата</p></li>
-      </ul>
-  </aside>
-</section>
+    </div>
+    <div class="promo-bullets">
+    <img src="img/nerds happy-cap.jpg" class="">
+    <p class="slogan-3"> С 2004 года любим точность во всем:</P>
+      <ul class="bullet">
+        <li><p><span class="slogan-2">146%<br><span>Уровень самоотдачи</p></li>
+        <li><p><span class="slogan-2">100%<br><span>Соблюдение сроков</p></li>
+        <li><p><span class="slogan-2">50%<br><span>Минимальныая предоплата</p></li>
+     </ul>
+    </div>
+  </section>
   <hr>
-<div> <!--Смущает вертиклаьный разделитель. ВОзможн, положить логотипы в таблицу?"-->
-<img src="img/partner logo-cap.jpg">
-<img src="img/partner logo-cap.jpg">
-<img src="img/partner logo-cap.jpg">
+<div class="partners">
+<ul>
+  <li><a href="" class="rollover"><img src="img/partner logo-cap.jpg"></a></li>
+  <li><a href="" class="rollover"><img src="img/partner logo-cap.jpg"></a></li>
+  <li><a href="" class="rollover"><img src="img/partner logo-cap.jpg"></a></li>
+</ul>
 </div>
   <hr>
-  </div><!-- закрывающий тег дива, предназначенного, чтобы задать ширину блоков, которые войдут в него-->
-</main>
-<footer>
-  <!--Карта + Блок с контактами и кнопкой "Напишите нам"-->
-  <img src="img/map-cap.jpg"><!--Заглушка для карты-->
-  <span>
-    <!--Это для всплыващего окна ан карте-->
-  <P>NERDS DESIGN STUDIO</P><!--для буквы Е с точками наверху нужно использовать спецсимвол или подключать к-то шрифт?-->
-  <P>191186, Санкт-Петербург,<br>
+<section class= "map">
+    <img src="img/map-cap.jpg">
+    <!--Это для всплыващего окна на карте-->
+  <p>NËRDS DESIGN STUDIO</P>
+  <p>191186, Санкт-Петербург,<br>
     ул. Б. Конюшенная, д.19/8<br><br>
-    тел. +7 (812) 275-75-75Б</p>
-  <p><a href="#ссылка для открытия формы обратной связи" class="кнопка" + дополнительно задать цвет кнопки>НАПИШИТЕ НАМ</a>
+    <addres><a href="tel:+78122757575">
+    тел. +7 (812) 275-75-75</a></address></p>
+  <p><a href="" class="knopka">Напишите нам</a><p><!--Я хочу создать в CSS единый класс для всех кнопок. Как дополнительно к нему для каждой кнопки задать свой цвет?-->
+</section>
 
-</footer>
+</main>
+
 <footer>
-  <!--Ссылка на соцсети + слоган и предложение о скидке-->
-  <aside><!--Блок с иконками доделать-->
-    Иконки соцсетей
-    <a href="#" target="_blank" class="social"> <i class="social__item fab fa-vk"></i> </a>
-    <a href="#" target="_blank" class="social"> <i class="social__item fab fa-facebook-facebook-f"></i></a>
-    <a href="#" target="_blank" class="social"> <i class="social__item fab fa-facebook-instagram-i"></i></a>
-    <!--Подключайте к сайту Font Awesome, в стили в первой строке прописать:
+  <div class="social">
+    <ul >
+      <li><a href="http://www.vk.com" target="_blank" ><img src="img/vk.png"></a></li>
+      <li><a href="http://www.facebook.com" target="_blank" ><img src="img/fb.png"></a></li>
+      <li><a href="https://www.instagram.com/" target="_blank" ><img src="img/inst.png"></a></li>
+    </ul>
+    </div>
 
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
-после подключаем иконки в шаблоне где нужно, например иконку instagram переходим на страницу иконки https://fontawesome.com/v4.7.0/icon/instagram копируем код:
-
-<i class="fa fa-instagram" aria-hidden="true"></i>
-
-и вставляем у себя в шаблоне сайта где она должна отображаться. Другие иконки ищем в списке https://fontawesome.com/v4.7.0/icons/-->
-</aside>
-  <article>
-    <P class="какой-то для среднего размера выделения">Давайте дружить, это выгодно!</P>
-    <p class="стиль основной для body">Скидка 10% для друзей из социальных сетей</p>
-  </article>
+  <div class "discount">
+    <p class="slogan-3">Давайте дружить, это выгодно!</P>
+    <p>Скидка 10% для друзей из социальных сетей</p>
+  </div>
 
 </footer>
   </body>

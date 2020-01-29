@@ -9,80 +9,97 @@
 
   <body>
 <header>
-  <div style="background-color:#eeeeee; width=100%"><!--Что-то сделать, чтобы убрать у серого блока отступы по бокам с сверху-->
-<logo>
-  <img src="img/nerds-logo_draft.jpg">
-</logo>
 
-  <nav class="стиль основного меню">
-    <ul style="display:inline"><!--Здесь инлайн не заработал. Пропишем в стилях-->
+  <div class="logo">
+    <img src="img/nerds-logo_draft.jpg">
+  </div>
+
+<nav class="main-menu">
+    <ul>
       <li><a href="#studio">Студия</a></li>
       <li><a href="#clients">Клиенты</a></li>
       <li><a href="#shop">Магазин</a></li>
       <li><a href="#contacts">Контакты</a></li>
-      <li><a href="#contacts"><img src ="img/basket-cap.jpg"</a></li>
+   </ul>
+  </nav>
+
+<div class="basket">
+    <ul>
+      <li><a href="#basket"><img src ="img/basket-cap.jpg"></a></li>
       <li><a href="#basket">Корзина</a></li>
     </ul>
-  </nav>
-  <p class="стиль для слогана 2">Магазин готовых шаблонов.</p>
-
 </div>
 </header>
-    <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
 
 <main>
-  <div class="">
-    <span> СТОИМОСТЬ:</span>
-    <span> СОРТИРОВАТЬ:</span>
-    <span> ПО ЦЕНЕ</span>
-    <span> ПО ТИПУ</span>
-    <span> ПО НАЗВАНИЮ</span>
-    <span> кнопка вниз</span>
-    <span> кнопка вверх</span>
-  </div>
-  <section>Форма выбора параметров и кнопка "Показать"</section>
-  <div><!--Превью макетов для продажи. Положить в таблицу?-->
-<img src="img/preview-cap.jpg">
-<img src="img/preview-cap.jpg">
-<img src="img/preview-cap.jpg">
-<img src="img/preview-cap.jpg">
-<img src="img/preview-cap.jpg">
-<img src="img/preview-cap.jpg">
-  </div>
-</main>
-<footer>
-  <!--Карта + Блок с контактами и кнопкой "Напишите нам"-->
-  <img src="img/map-cap.jpg"><!--Заглушка для карты-->
-  <span>
-    <!--Это для всплыващего окна ан карте-->
-  <P>NERDS DESIGN STUDIO</P><!--для буквы Е с точками наверху нужно использовать спецсимвол или подключать к-то шрифт?-->
-  <P>191186, Санкт-Петербург,<br>
+  <section class="grey">
+    <p><h1>Магазин готовых шаблонов<h1></p>
+  </section>
+
+<section class "filter">
+  <p class="slogan-3">Стоимость:</p>
+  <!-- Форма "полозок"-->
+  <p class="slogan-3">Сетка:</p>
+    <!-- Форма "радио"-->
+  <p class="slogan-3">Особенности:</p>
+    <!-- Форма "чекбоксы"-->
+  <p><a href="" class="knopka">Показать</a></p><!--Я хочу создать в CSS единый класс для всех кнопок. Как дополнительно к нему для каждой кнопки задать свой цвет?-->
+</section>
+<div class "sort">
+  <p class="slogan-3">Сортировать:</p>
+  <ul>
+    <li><a href="" class="sort-tap">По цене</a></li>
+    <li><a href="" class="sort-tap">По типу</a></li>
+    <li><a href="" class="sort-tap">По названию</a></li>
+    <li><a href="" class="sort-tap-img"><img src="img/down.png"></a></li>
+    <li><a href="" class="sort-tap-img"><img src="img/up.png"></a></li>
+  </ul>
+</div>
+
+    <section class="templates">
+      <ul>
+        <li><a href="" class="template-tap"><img src="img/preview-cap.jpg"></a></li>
+        <li><a href="" class="template-tap"><img src="img/preview-cap.jpg"></a></li>
+        <li><a href="" class="template-tap"><img src="img/preview-cap.jpg"></a></li>
+        <li><a href="" class="template-tap"><img src="img/preview-cap.jpg"></a></li>
+        <li><a href="" class="template-tap"><img src="img/preview-cap.jpg"></a></li>
+        <li><a href="" class="template-tap"><img src="img/preview-cap.jpg"></a></li>
+      </ul>
+
+      <section class="paging">
+        <ul>
+          <li><a href="" class="paging-tap">1</a></li>
+          <li><a href="" class="paging-tap">2</a></li>
+          <li><a href="" class="paging-tap">3</a></li>
+          <li><a href="" class="paging-tap">Следующая</a></li>
+        </ul>
+      </section>
+<section class= "map">
+    <img src="img/map-cap.jpg">
+    <!--Это для всплыващего окна на карте-->
+  <p>NËRDS DESIGN STUDIO</P>
+  <p>191186, Санкт-Петербург,<br>
     ул. Б. Конюшенная, д.19/8<br><br>
-    тел. +7 (812) 275-75-75Б</p>
-  <p><a href="#ссылка для открытия формы обратной связи" class="кнопка" + дополнительно задать цвет кнопки>НАПИШИТЕ НАМ</a>
+    <addres><a href="tel:+78122757575">
+    тел. +7 (812) 275-75-75</a></address></p>
+  <p><a href="" class="knopka">Напишите нам</a><p><!--Я хочу создать в CSS единый класс для всех кнопок. Как дополнительно к нему для каждой кнопки задать свой цвет?-->
+</section>
 
-</footer>
+</main>
+
 <footer>
-  <!--Ссылка на соцсети + слоган и предложение о скидке-->
-  <aside><!--Блок с иконками доделать-->
-    Иконки соцсетей
-    <a href="#" target="_blank" class="social"> <i class="social__item fab fa-vk"></i> </a>
-    <a href="#" target="_blank" class="social"> <i class="social__item fab fa-facebook-facebook-f"></i></a>
-    <a href="#" target="_blank" class="social"> <i class="social__item fab fa-facebook-instagram-i"></i></a>
-    <!--Подключайте к сайту Font Awesome, в стили в первой строке прописать:
+  <div class="social">
+    <ul >
+      <li><a href="http://www.vk.com" target="_blank" ><img src="img/vk.png"></a></li>
+      <li><a href="http://www.facebook.com" target="_blank" ><img src="img/fb.png"></a></li>
+      <li><a href="https://www.instagram.com/" target="_blank" ><img src="img/inst.png"></a></li>
+    </ul>
+    </div>
 
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
-после подключаем иконки в шаблоне где нужно, например иконку instagram переходим на страницу иконки https://fontawesome.com/v4.7.0/icon/instagram копируем код:
-
-<i class="fa fa-instagram" aria-hidden="true"></i>
-
-и вставляем у себя в шаблоне сайта где она должна отображаться. Другие иконки ищем в списке https://fontawesome.com/v4.7.0/icons/-->
-</aside>
-  <article>
-    <P class="какой-то для среднего размера выделения">Давайте дружить, это выгодно!</P>
-    <p class="стиль основной для body">Скидка 10% для друзей из социальных сетей</p>
-  </article>
+  <div class "discount">
+    <p class="slogan-3">Давайте дружить, это выгодно!</P>
+    <p>Скидка 10% для друзей из социальных сетей</p>
+  </div>
 
 </footer>
   </body>
